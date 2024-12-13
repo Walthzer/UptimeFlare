@@ -120,11 +120,11 @@ const workerConfig = {
               description: `Status: **${isUp ? "UP" : "DOWN"}**`,
               color: isUp ? 5763719 : 15548997
           }
-      ]
-      }
+      ]};
+      console.log(JSON.stringify(params));
       await fetch("https://discord.com/api/webhooks/1317139754717806674/wG8cOHzMamCH3_T5czY2M6v4Kk647ul3gUMGXA3Ucz5JQ9WCxT74FscTKG6Bbhx6WJyW",  {
         body: JSON.stringify(params),
-      })
+      });
     },
     onIncident: async (
       env: any,
