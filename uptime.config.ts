@@ -20,7 +20,7 @@ const workerConfig = {
       // `name` is used at status page and callback message
       name: 'Offcourse Gulag',
       // `method` should be a valid HTTP Method
-      method: 'POST',
+      method: 'GET',
       // `target` is a valid URL
       target: 'https://gulag.offcourse.uk/OK',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
@@ -46,7 +46,7 @@ const workerConfig = {
       // `name` is used at status page and callback message
       name: 'Offcourse Jail',
       // `method` should be a valid HTTP Method
-      method: 'POST',
+      method: 'GET',
       // `target` is a valid URL
       target: 'https://jail.offcourse.uk/OK',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
