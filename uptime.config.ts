@@ -18,7 +18,7 @@ const workerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'moodle',
       // `name` is used at status page and callback message
-      name: 'Offcourse Moodle',
+      name: 'Moodle',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
@@ -40,7 +40,7 @@ const workerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'gulag',
       // `name` is used at status page and callback message
-      name: 'Offcourse Gulag',
+      name: 'Gulag',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
@@ -62,7 +62,7 @@ const workerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'jail',
       // `name` is used at status page and callback message
-      name: 'Offcourse Jail',
+      name: 'Jail',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
@@ -109,6 +109,22 @@ const workerConfig = {
 
       // This will not follow the grace period settings and will be called immediately when the status changes
       // You need to handle the grace period manually if you want to implement it
+
+      const params = {
+        username: "STATUS UPDATE",
+        avatar_url: "https://moodle.feitsma.uk/pluginfile.php/1/core_admin/logocompact/300x300/1724870970/48.png",
+        content: "",
+        embeds: [
+          {
+              title: monitor.name,
+              description: `Status: **${isUp ? "UP" : "DOWN"}**`,
+              color: isUp ? "00FF00" : "FF0000"
+          }
+      ]
+      }
+      await fetch("https://discord.com/api/webhooks/1317139754717806674/wG8cOHzMamCH3_T5czY2M6v4Kk647ul3gUMGXA3Ucz5JQ9WCxT74FscTKG6Bbhx6WJyW",  {
+        body: JSON.stringify(params),
+      })
     },
     onIncident: async (
       env: any,
