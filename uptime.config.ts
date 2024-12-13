@@ -111,7 +111,7 @@ const workerConfig = {
       // You need to handle the grace period manually if you want to implement it
 
       const params = {
-        username: "STATUS UPDATE",
+        username: "status update",
         avatar_url: "https://moodle.feitsma.uk/pluginfile.php/1/core_admin/logocompact/300x300/1724870970/48.png",
         content: "",
         embeds: [
@@ -124,6 +124,10 @@ const workerConfig = {
       console.log(JSON.stringify(params));
       await fetch("https://discord.com/api/webhooks/1317139754717806674/wG8cOHzMamCH3_T5czY2M6v4Kk647ul3gUMGXA3Ucz5JQ9WCxT74FscTKG6Bbhx6WJyW",  {
         body: JSON.stringify(params),
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
       });
     },
     onIncident: async (
