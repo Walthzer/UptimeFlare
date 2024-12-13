@@ -35,10 +35,6 @@ const workerConfig = {
       headers: {
         'User-Agent': 'Uptimeflare',
       },
-      // [OPTIONAL] body to be sent
-      body: 'Uptimeflare PING',
-      // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      responseKeyword: 'OK',
     },
     {
       // `id` should be unique, history will be kept if the `id` remains constant
@@ -61,10 +57,6 @@ const workerConfig = {
       headers: {
         'User-Agent': 'Uptimeflare',
       },
-      // [OPTIONAL] body to be sent
-      body: 'Uptimeflare PING',
-      // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      responseKeyword: 'OK',
     },
     // // Example TCP Monitor
     // {
