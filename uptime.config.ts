@@ -118,7 +118,7 @@ const workerConfig = {
           {
               title: monitor.name,
               description: `Status: **${isUp ? "UP" : "DOWN"}**`,
-              color: isUp ? "00FF00" : "FF0000"
+              color: isUp ? 5763719 : 15548997
           }
       ]
       }
