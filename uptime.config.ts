@@ -29,30 +29,8 @@ const workerConfig = {
       //statusPageLink: 'https://example.com',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       expectedCodes: [200],
-      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000,
-      // [OPTIONAL] headers to be sent
-      headers: {
-        'User-Agent': 'Uptimeflare',
-      },
-    },
-    {
-      // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'gulag',
-      // `name` is used at status page and callback message
-      name: 'Gulag',
-      // `method` should be a valid HTTP Method
-      method: 'GET',
-      // `target` is a valid URL
-      target: 'https://gulag.offcourse.uk/OK',
-      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'VPL Execution Server GULAG',
-      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      //statusPageLink: 'https://example.com',
-      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      expectedCodes: [200],
-      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000,
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 30000
+      timeout: 30000,
       // [OPTIONAL] headers to be sent
       headers: {
         'User-Agent': 'Uptimeflare',
@@ -73,8 +51,74 @@ const workerConfig = {
       //statusPageLink: 'https://example.com',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       expectedCodes: [200],
-      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000,
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 30000
+      timeout: 30000,
+      // [OPTIONAL] headers to be sent
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      },
+    },
+        {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'gulag',
+      // `name` is used at status page and callback message
+      name: 'Gulag',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://gulag.offcourse.uk/OK',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'VPL Execution Server GULAG',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      //statusPageLink: 'https://example.com',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 30000
+      timeout: 30000,
+      // [OPTIONAL] headers to be sent
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      },
+    },
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'xinjiang',
+      // `name` is used at status page and callback message
+      name: '<i>REDACTED</i>',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://xinjiang.offcourse.uk/OK',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'VPL Execution Server REDACTED',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      //statusPageLink: 'https://example.com',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 30000
+      timeout: 30000,
+      // [OPTIONAL] headers to be sent
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      },
+    },
+            {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'tule-lake',
+      // `name` is used at status page and callback message
+      name: 'Tule Lake',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://tule-lake.offcourse.uk/OK',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'VPL Execution Server TULE-LAKE',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      //statusPageLink: 'https://example.com',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 30000
+      timeout: 30000,
       // [OPTIONAL] headers to be sent
       headers: {
         'User-Agent': 'Uptimeflare',
