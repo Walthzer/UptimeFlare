@@ -15,7 +15,7 @@ export default function MonitorDetail({
   if (!state.latency[monitor.id])
     return (
       <>
-        <Text mt="sm" fw={700}>
+        <Text fs={monitor.name.includes("REDACTED") ? "italic" : ""} mt="sm" fw={700}>
           {monitor.name}
         </Text>
         <Text mt="sm" fw={700}>
@@ -42,7 +42,7 @@ export default function MonitorDetail({
 
   // Conditionally render monitor name with or without hyperlink based on monitor.url presence
   const monitorNameElement = (
-    <Text mt="sm" fw={700} style={{ display: 'inline-flex', alignItems: 'center' }}>
+    <Text fs={monitor.name.includes("REDACTED") ? "italic" : ""} mt="sm" fw={700} style={{ display: 'inline-flex', alignItems: 'center' }}>
       {monitor.statusPageLink ? (
         <a href={monitor.statusPageLink} target="_blank" style={{ display: 'inline-flex', alignItems: 'center', color: 'inherit' }}>
           {statusIcon} {monitor.name}
